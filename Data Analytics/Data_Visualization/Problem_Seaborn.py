@@ -9,6 +9,7 @@ The year column of the dataset will be set as columns, the month will be set as 
 
 import pandas as pd
 import seaborn as sns
+import matplotlib.pyplot as plt
 
 df = sns.load_dataset('flights') # Reading flights dataset from seaborn package
 # Reshaping the DataFrame
@@ -16,4 +17,6 @@ df = pd.pivot_table(df, values = 'passengers', index = ['month'], columns = 'yea
 
 # Plotting the heatmap
 sns.heatmap(df, annot = True, fmt = '')   ## The fmt parameter keeps the numbers on the heatmap concise for a better view and understanding.
+
+plt.show()
 

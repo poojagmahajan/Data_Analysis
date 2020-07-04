@@ -7,6 +7,7 @@ A heatmap uses different colors to display data, while other plotting methods ei
 
 import pandas as pd
 import seaborn as sns
+import matplotlib.pyplot as plt
 
 # predefined table in data variable
 df = pd.read_csv('Data.csv')
@@ -20,3 +21,6 @@ sns1 = sns.heatmap(df) # plotting heatmap
 # This method of seaborn allows the user to view the data points as well as the color band to which they belong.
 
 sns1 = sns.heatmap(df, annot = True) # Using annotation to display numbers
+
+# show the plot
+plt.show()

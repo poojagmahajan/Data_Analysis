@@ -26,13 +26,14 @@ set2 = np.random.randn(150)
 # ploting histograms
 plt.hist(set1, density=True, color='red', alpha=0.6,bins=20)
 plt.hist(set2, density=True, alpha=0.6,bins=20)  # alpha parameter introduced here makes the respective plots transparent to a specific percentage assigned to it.
-
+plt.show()
 ########### Using seaborn ######################
 
 # jointplot() function is used for this task.
 
 import numpy as np
 import seaborn as sns
+import matplotlib.pyplot as plt
 
 set1 = np.random.randn(500)
 set2 = np.random.randn(500)
@@ -41,3 +42,4 @@ sns1 = sns.jointplot(set1, set2)
 
 sns2 = sns.jointplot(set1, set2, kind='hex')  # Data in hexagonal form
 # kind parameters are scatter, reg, resid, or kde
+plt.show()

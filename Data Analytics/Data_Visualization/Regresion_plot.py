@@ -15,7 +15,10 @@ We will use the tips dataset as used in its documentation( https://seaborn.pydat
 import numpy as np
 import pandas as pd
 import seaborn as sns
+import matplotlib.pyplot as plt
 
 df = sns.load_dataset('tips') # Loading dataset from seaborn library
 
 sns1 = sns.lmplot(x = 'total_bill', y = 'tip',hue = 'sex', data = df) # plotting regression plot
+
+plt.show()

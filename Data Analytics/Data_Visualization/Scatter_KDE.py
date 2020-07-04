@@ -8,10 +8,13 @@ Same like regression plot
 
 import numpy as np
 import seaborn as sns
+import matplotlib.pyplot as plt
 
 df = sns.load_dataset('tips')
 
 sns1 = sns.scatterplot(x = 'total_bill', y = 'tip', data = df)
+
+plt.show()
 
 ##### KDE (kernel density estimation) plots #######
 
@@ -24,3 +27,5 @@ import seaborn as sns
 x = np.random.randn(100) # Generating random data
 
 sns1 = sns.kdeplot(x, color = 'red') # ploting KDE plot
+
+plt.show()
